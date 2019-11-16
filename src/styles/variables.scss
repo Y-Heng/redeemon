@@ -1,0 +1,22 @@
+/* Colors
+-------------------------- */
+$--color-white: #fff !default;
+$--color-black: #000 !default;
+
+$--color-primary: #ff8244 !default;
+$--color-success: #13ce66 !default;
+$--color-warning: #e6a23c !default;
+$--color-danger: #e60000 !default;
+$--color-info: #909399 !default;
+// text color
+$--color-text: #37474f;
+$--color-text-dark: mix($--color-black, $--color-text, 30%) !default; //#273237
+$--color-text-light: mix($--color-white, $--color-text, 30%) !default; //#737e84
+$--color-text-lighter: mix($--color-white, $--color-text, 60%) !default; //#afb5b9
+//sidebar
+$--menu-bg: #2b333e;
+$--menu-sub-bg: rgba(255, 130, 68, 0.1);
+$--menu-hover: rgba(255, 130, 68, 0.3);
+$--menu-text: #fff;
+$--menu-active-bg: #ff8244;
+$--menu-active-text: #ff8244;
