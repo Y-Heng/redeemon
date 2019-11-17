@@ -21,6 +21,15 @@ export default new Router({
       path: '/svg',
       name: 'svg',
       component: () => import(/* webpackChunkName: "svg" */ '@/views/demo/svg-icon.vue')
+    },
+    // 错误页
+    {
+      path: '/404',
+      component: () => import(/* webpackChunkName: "404" */ '@/views/404.vue')
+    },
+    {
+      path: '*',
+      component: () => import(/* webpackChunkName: "404" */ '@/views/404.vue')
     }
   ]
 })

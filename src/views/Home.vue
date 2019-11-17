@@ -1,10 +1,8 @@
 <template>
-  <div class="home">
+  <div class="home" @click="$router.push('/about')">
     <img src="../assets/kurumi/block-bride.png" alt />
   </div>
 </template>
-
-<script></script>
 
 <style rel="stylesheet/scss" lang="scss" scoped>
 .home {
