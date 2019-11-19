@@ -16,12 +16,12 @@ module.exports = {
   productionSourceMap: false,
   configureWebpack: config => {
     // 排除打包模块
-    // config.externals = {
-    //   vue: 'Vue',
-    //   axios: 'axios',
-    //   vuex: 'Vuex',
-    //   'vue-router': 'VueRouter'
-    // }
+    config.externals = {
+      vue: 'Vue',
+      axios: 'axios',
+      vuex: 'Vuex',
+      'vue-router': 'VueRouter'
+    }
     // 加载处理
     config.resolve = {
       extensions: ['.js', '.vue', '.json', '.css', '.ts'],
