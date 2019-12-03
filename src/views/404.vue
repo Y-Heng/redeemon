@@ -23,7 +23,7 @@ import { Component, Vue } from 'vue-property-decorator'
 @Component({})
 export default class Empty extends Vue {
   back(): void {
-    this['router'].push('/')
+    this.$router.push('/')
   }
 }
 </script>
