@@ -1,12 +1,12 @@
 import Vue from 'vue'
-import App from './App.vue'
+import App from './app.vue'
 import router from './router'
 import store from './store'
 import './icons'
-import i18n from '@/lang'
 import '@/styles/element-variables.scss'
 import '@/styles/global.scss' // global css
 import Element from 'element-ui'
+import i18n from '@/lang'
 
 Vue.config.productionTip = false
 

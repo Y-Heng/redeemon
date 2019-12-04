@@ -1,4 +1,3 @@
-const webpack = require('webpack')
 const path = require('path')
 function resolve(dir) {
   return path.join(__dirname, dir)
@@ -15,11 +14,6 @@ module.exports = {
   assetsDir: 'static',
   productionSourceMap: false,
   configureWebpack: config => {
-    // 关闭 webpack 的性能提示
-    config.performance = {
-      hints: false
-    }
-
     // 排除打包模块
     config.externals = {
       vue: 'Vue',
@@ -31,6 +25,7 @@ module.exports = {
     config.resolve = {
       extensions: ['.js', '.vue', '.json', '.css', '.ts'],
       alias: {
+        vue$: 'vue/dist/vue.esm.js',
         '@': resolve('src')
       }
     }
@@ -94,6 +89,7 @@ module.exports = {
     port: 6688, // 端口号
     https: false,
     hotOnly: false, // https:{type:Boolean}
-    proxy: null // 设置代理
+    proxy: null, // 设置代理
+    before: app => {}
   }
 }
