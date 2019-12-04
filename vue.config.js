@@ -15,6 +15,11 @@ module.exports = {
   assetsDir: 'static',
   productionSourceMap: false,
   configureWebpack: config => {
+    // 关闭 webpack 的性能提示
+    config.performance = {
+      hints: false
+    }
+
     // 排除打包模块
     config.externals = {
       vue: 'Vue',
@@ -60,11 +65,11 @@ module.exports = {
     }
     config.plugins = [
       ...config.plugins,
-      ...plugins,
-      new webpack.ProvidePlugin({
-        _: 'lodash',
-        moment: 'moment'
-      })
+      ...plugins
+      // new webpack.ProvidePlugin({
+      //   _: 'lodash',
+      //   moment: 'moment'
+      // })
     ]
   },
   chainWebpack: config => {

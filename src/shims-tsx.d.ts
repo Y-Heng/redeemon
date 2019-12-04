@@ -1,6 +1,6 @@
 import Vue, { VNode } from 'vue'
-import * as lodash from 'lodash'
-import _moment from 'moment'
+// import * as lodash from 'lodash'
+// import _moment from 'moment'
 
 declare global {
   namespace JSX {
@@ -12,8 +12,8 @@ declare global {
       [elem: string]: any
     }
   }
-  namespace _ {
-    const _lodash: typeof lodash
-  }
-  const moment: typeof _moment
+  // namespace _ {
+  //   const _lodash: typeof lodash
+  // }
+  // const moment: typeof _moment
 }

@@ -23,7 +23,7 @@ import { Component, Vue } from 'vue-property-decorator'
 
 @Component({})
 export default class SvgIconDemon extends Vue {
-  icons_map: Array<any> = []
+  icons_map: string[] = []
   generateIconCode(symbol: any): string {
     return `<svg-icon icon-class="${symbol}" />`
   }
