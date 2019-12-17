@@ -19,6 +19,10 @@
     "variable-name": {
       "options": ["allow-pascal-case", "allow-snake-case"]
     },
+    // 如果for循环中没有使用索引，建议是使用for-of
+    "prefer-for-of": true,
+    // 不允许使用未使用的表达式
+    "no-unused-expression": true,
     "trailing-comma": [
       false,
       {
